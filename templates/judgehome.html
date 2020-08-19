@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Judge Page </title>
+    <!-- <link rel="stylesheet" href="../css/mystyle.css"> -->
+    <link rel="stylesheet" href="../res_lib/bootstrap.min.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home_css/image_slider.css">
+    <link rel="stylesheet" href="../css/home_css/nav_style.css">
+  </head>
+  <body>
+
+    <!-- <h4 class="st_id"> Opponent ID: </h4> -->
+    <div class="us_holder">
+      <div class="us_img"> </div>
+      <div class="my_id"> <?php echo $judge_id ?> </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"> Judge Page </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Judge Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../view_notifications.php">View Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="update_case_page.php">Update Case</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_witness_page.php">Add Witness Document</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view_judge_report.php">View Self Report</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../logout.php">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<br>
+    <section id="slider">
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3" checked>
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+      <label for="s1" id="slide1"></label>
+      <label for="s2" id="slide2"></label>
+      <label for="s3" id="slide3"></label>
+      <label for="s4" id="slide4"></label>
+      <label for="s5" id="slide5"></label>
+    </section>
+
+   
+
+    <-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Court Case Login Page </title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="res_lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+
+<head>
+  <title>Head</title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="res_lib/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Court Case Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <!-- <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div> -->
+        <div class="col-md-8 col-lg-6">
+          <div class="login d-flex align-items-center py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h3 class="login-heading mb-4">Login</h3>
+                  <form action="login_checker.php" method="post">
+                    <div class="form-label-group">
+                      <input type="text" id="inputEmail" class="form-control" placeholder="Email address" name="user_id" required autofocus>
+                      <label for="inputEmail">User ID</label>
+                    </div>
+
+                    <div class="form-label-group">
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+                      <label for="inputPassword">Password</label>
+                    </div>
+
+                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                    <div class="text-center">
+                      <a class="small" href="#">Forgot password?</a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-lg-6">
+          <div class="login d-flex align-items-center py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 col-lg-8 mx-auto">
+                  <h3 class="login-heading mb-4">View Case</h3>
+                  <form action="view_case.php" id="view_case_form" method="post">
+                    <div class="form-label-group">
+                      <input id="inputCaseNum" type="text" class="form-control" placeholder="Email address" name="case_num">
+                      <label for="inputCaseNum">Case Number</label>
+                    </div>
+                    <button class="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2" id="view_case_btn" type="submit">View Case</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="cs_num"> Case Number :  </h2>
+    <h2 id="cs_title"> Case Title : </h2>
+    <h3 id="cs_court_date"> Court Date : </h3>
+    <h3 id="cs_status"> Case Status : </h3>
+
+    
+  </body>
+</html>

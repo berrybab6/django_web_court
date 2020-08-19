@@ -1,0 +1,41 @@
+
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title> Add Witness Document </title>
+     <script src="../js/jquery-3.4.1.min.js"></script>
+     <link rel="stylesheet" href="../res_lib/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/judge_css/case_update.css">
+     <link rel="stylesheet" href="../css/home_css/nav_style.css">
+   </head>
+   <body>
+
+
+     <h2 class="ju_id" style="display:none;"> <?php echo $judge_id ?> </h2><br>
+
+     <div class="us_holder">
+       <div class="us_img"> </div>
+       <div class="my_id"> <?php echo $judge_id ?> </div>
+       <button class="btn2" onclick="window.location.href = 'judge_home.php';"> Back </button>
+       <button class="btn2" onclick="window.location.href = '../logout.php';"> Logout </button>
+     </div>
+
+    <div class="wrapper">
+      <form id="add_wit_form" class="close_form  my_form" action="add_witness.php" method="post" enctype="multipart/form-data">
+        <h3> Add Witness Document </h3><br>
+         <select class="add_wit_choose" name="case_nm">
+           <!-- cases will be here in <option> tag -->
+         </select><br>
+         <textarea class="close_case_desc" name="wit_desc" rows="8" cols="80" placeholder="Witness Document Description"></textarea><br>
+         <input id="wit_file" type="file" name="wit_file" value="" placeholder="Choose Additional File"><br>
+         <input class="btn" id="add_wit_btn" type="submit" name="submit" value="Add Witness">
+         <input class="btn" type="reset" name="reset" value="Cancel">
+       </form>
+     </div>
+
+   </body>
+
+ </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Judge Report View Page </title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+      .my_card{
+        margin:0.5%;
+        margin-bottom: 10px;
+        width: 97%;
+        height:auto;
+        padding: 8px 12px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px gray;
+        background-image: url("../images/gavel.jpg");
+        background-size: cover;
+      }
+
+      .card{
+        margin:1%;
+        margin-bottom: 5px;
+        width: 95%;
+        height:auto;
+        padding: 8px 12px;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        background-color: #000000aa;
+        box-shadow: 0 0 7px gray;
+      }
+
+      .open{
+        background-color: #222831aa;
+        padding: 8px 12px;
+        border-radius: 2px;
+        color: white;
+        box-shadow: 0 0 6px gray;
+      }
+
+      .closed{
+        background-color: #d65a31aa;
+        padding: 8px 12px;
+        border-radius: 2px;
+        color: white;
+        box-shadow: 0 0 6px gray;
+      }
+
+      h1,h2,h3,h4,h5{
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h3 class="uid"> <?php echo $user_id ?> </h3>
+
+    <div class="my_card">
+
+    </div>
+
+  </body>
+
+  
+
+</html>
